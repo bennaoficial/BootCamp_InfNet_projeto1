@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Noto+Sans:wght@300;400;600;700&display=swap');
+
+@import "./header.css";
+@import "./previa_inicio.css";
+@import "./carroussel.css";
+@import "./modal.css";
+@import "./videoplayer.css";
+@import "./botao.css";
+@import "./saibamais.css";
+@import "./pagina_abertura.css";
+@import "./form.css";
+@import "./mediaquery.css";
+
+
+html, body{
+  margin: 0;
+  background-image: url("../img/background.webp");
+  background-color: #1b1b1b;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+ font-family: 'Montserrat', sans-serif !important;
+
+}
+.carousel {
+  background-color: none;
+}

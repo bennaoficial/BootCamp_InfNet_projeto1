@@ -1,0 +1,108 @@
+.modal-fade {
+  width: 100%!important;
+}
+
+.modal-dialog {
+  width: 100%!important;
+}
+
+#ModalLabel {
+  font-size: 40px;
+  margin: 0;
+  
+}
+.modal-content {
+  background: rgba(0, 0, 0, 0.4) !important;
+  width: 600px!important;
+  color: white !important;
+  border: 0;
+  
+  
+}
+#modal-body {
+  width: 600px !important;
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+.botao_play {
+  margin: 235px auto;
+  margin-bottom: 0;
+  z-index: 1;
+
+}
+
+.background_image {
+  z-index: 0;
+  position: fixed;
+}
+
+.background_image img {
+    width: 568px;
+/*     margin-left: 11%; */
+}
+
+.modal_corpo {
+  z-index: 1;
+  background: #1c1c1c;
+  margin-top: 150px;
+  padding: 20px;
+}
+
+#modal-body p span {
+  padding-left: 40px;
+}
+
+#modal-body button {
+  margin: 0 auto;
+}
+
+/* Bibliotecas */
+
+.biblioteca {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+}
+
+.biblioteca .imagem_biblioteca img {
+  width: 350px;
+  padding: 0 auto;
+}
+.biblioteca p {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.redes_sociais {
+  padding-left: 5%;
+  padding-bottom: 10px;
+}
+
+.redes_sociais a {
+  font-size: 30px;
+  color: white;
+  padding-left:10px ;
+}
+.redes_sociais a .fa-facebook:hover,
+.redes_sociais a .fa-facebook:active {
+ color: #3b5998;  
+}
+.redes_sociais a .fa-instagram:hover,
+.redes_sociais a .fa-instagram:active {
+  color:#ff0066  ;
+}
+.redes_sociais a .fa-youtube:hover,
+.redes_sociais a .fa-youtube:active {
+  color:red;
+}
+.redes_sociais a .fa-spotify:hover,
+.redes_sociais a .fa-spotify:active {
+  color:#81b71a  ;
+}
+
+.descricao_biblioteca {
+  margin-top: 20px;
+}

@@ -1,0 +1,15 @@
+.videoplayer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.videoplayer iframe {
+  z-index: 0;
+  padding-top: 77px;
+  height: 92vh;
+  width: 100%;
+}
+.botao_fimdepagina {
+  display: flex;
+  justify-content: center;
+}

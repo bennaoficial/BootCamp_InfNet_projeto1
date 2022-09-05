@@ -1,0 +1,35 @@
+.botao_padrao {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 160px !important;
+  color: white !important;
+
+}
+.botao_padrao:hover,
+.botao_padrao:visited,
+.botao_padrao:active {
+  background-color: #3a3a3a !important;
+  color: white !important;
+}
+
+/* Botao no Modal */
+
+.botao_play i {
+  color: #1b1b1b;
+  font-size: 100px;
+  box-shadow: 0 8px 16px;
+  border-radius: 30px;
+}
+.botao_play i:hover,
+.botao_play i:active {
+  transform: scale(1.1);
+}
+
+.botao_padrao a {
+  text-decoration: none;
+  color:white;
+}
+.botao_padrao a:active,
+.botao_padrao a:visited {
+  color:white;
+}
+

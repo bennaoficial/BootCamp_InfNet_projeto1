@@ -1,0 +1,304 @@
+<!-- 
+  Construa a página home de catálogos do NETFLIX utilizando tudo que foi aprendido no módulo de HTML até o presente momento. Ao clicar no item do catálogo deve abrir uma descrição sobre a série/filme, ou em nova aba ou modal. Não precisa criar cada página de cada série/filme, pode fazer uma genérica, mas que mostre como seria abrir a descrição da série/filme.
+  Não se preocupe com as interações Javascript, essa parte não precisa ser feita.
+  Exemplo: Ao clicar em uma série trocar o fundo principal etc. 
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <title>Projeto Final</title>
+</head>
+
+<body>
+  <!-- parte top do menu    -->
+     <header class="py-3 mb-3 border-bottom menu">
+      <div class="container-fluid align-items-center menu_topo">
+        <div class="dropdown">
+          <a href="#"
+            class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 text-white text-decoration-none dropdown-toggle "
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img alt="" id="logo_menu" src="./assets/img/Logo/logo.webp" width="150">
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <ul class="dropdown-menu text-small shadow menu_dropdown" style="">
+            <li>
+              <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                  </svg>
+                  <div class="">
+                    <img src="./assets/img/usuario.png" alt="foto usuario" width="32" height="32" class="rounded-circle">
+                    <span class="fs-4"><strong>Benaion</strong></span>
+                  </div>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                    <a href="./home.html" class="nav-link text-white" aria-current="page">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Início
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./home.html#rock" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Rock
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./home.html#metal" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Metal
+                    </a>
+                  </li>
+                    <li class="nav-item">
+                    <a href="./home.html#instrumental" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Instrumental
+                    </a>
+                  </li>
+                </ul>
+                 <ul>
+                   
+                    <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Faq
+                    </a>
+                  </li>
+                  
+                    <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Suporte
+                    </a>
+                  </li>
+                 </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <form class="w-10 me-3" role="search">
+            <input type="search" class="form-control" placeholder="Buscar..." aria-label="Buscar">
+          </form>
+
+          <div class="flex-shrink-0 dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./assets/img/usuario.png" alt="foto usuario" width="32" height="32" class="rounded-circle me-2">
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./formulario.html">Sua Banda</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./index.html">Encerrar Sessão</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+  <!-- Corpo com bandas -->
+  <main>
+<!--   Video Topo da Pagina -->
+    <div class="previa_inicio">
+<!--       Video -->
+      <div id="video_divulgacao">
+        <div class="video1">
+       <iframe id="ytplayer"  height="800"
+src="https://www.youtube.com/embed/ygGuWkEWn_o?autoplay=1&fs=0&loop=1&playsinline=1"
+ allowfullscreen></iframe>
+        </div>
+        <div class="video2">
+          <iframe id="ytplayer2" height="400"
+src="https://www.youtube.com/embed/ygGuWkEWn_o?autoplay=1&fs=0&loop=1&playsinline=1"
+ allowfullscreen></iframe>
+        </div>
+
+      </div>
+<!-- Descricao frontal mais botao       -->
+      <div class="container_glass">
+        <div>
+          <img src="./assets/img/bandas/instrumental/FulvioOliveira/fulvio_logo.webp" alt="Logo Fulvio" class="banda">
+          <p class="banda_descricao">“Another Dream” é seu mais recente álbum com nove faixas, conta as participações do
+            guitarrista americano Greg Howe, na música “Another Dream” e Edu Ardanuy na faixa “Captain Caveman”, tem
+            influencias de Jazz/Rock e vem conquistando fãs de guitarra por todos os lugares. </p>
+<!--           Botão Assistir -->
+          <button onclick="window.location.href='./videoplayer.html'" type="button" class="btn btn-outline-secondary btn-lg botao_padrao">Assistir</button>
+          <button onclick="window.location.href='./saibamais.html'" type="button" class="btn btn-outline-secondary btn-lg botao_padrao">Saiba Mais</button>
+        </div>
+
+      </div>
+
+    </div>
+    <!--   carrosseis com as bandas -->
+    <!-- Bandas Instrumental -->
+    <section class="instrumental" id="instrumental">
+      <h1>Instrumental </h1>
+      <div id="myCarousel4" class="carousel slide pointer-event" data-bs-ride="carousel">
+        <!-- Primeira Página  -->
+        <div class="carousel-inner">
+          <!-- Primeira Página  -->
+          <div class="carousel-item active">
+            <div class="sessao1">
+              <div class="row mb-3 text-center">
+                <div class="col-md-4 themed-grid-col bandas_img">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_padrao">
+                    <img alt="" src="./assets/img/bandas/instrumental/EduardoLira/Album2.webp" >
+                  </button>
+                </div>
+                <div class="col-md-4 themed-grid-col bandas_img"> 
+                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_padrao"> 
+                  <img alt="" src="./assets/img/bandas/instrumental/FulvioOliveira/fulvio_oliveira.webp">
+                </button>
+                </div>
+                <div class="col-md-4 themed-grid-col bandas_img"> 
+                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_padrao"> 
+                  <img alt="" src="./assets/img/bandas/instrumental/ricardo_marins.webp">
+                </button>
+                </div>
+            </div>
+            </div>
+            <div class="container container_placeholder">
+              <div class="carousel-caption text-start">
+                <h1>O melhor do Instrumental</h1>
+                <p>Bandas com trabalho instrumental</p>
+              </div>
+            </div>
+          </div>
+          <!-- Segunda Página  -->
+          <div class="carousel-item">
+             <div class="row mb-3 text-center">
+                  <!-- Button trigger modal -->
+               <div class="col-md-4 themed-grid-col bandas_img">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_padrao">
+                    <img alt="" src="./assets/img/bandas/instrumental/ozielzinho.webp">
+                  </button>
+                </div>
+                <div class="col-md-4 themed-grid-col bandas_img">
+               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_padrao">
+                  <img alt="" src="./assets/img/bandas/instrumental/gustavo_guerra.webp" >
+               </button>
+                </div>
+                <div class="col-md-4 themed-grid-col bandas_img">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal_padrao"><img alt="" src="./assets/img/bandas/instrumental/EduardoLira/Album1.webp" > </button></div>
+          </div>
+        </div>
+        <!--  indicadores de passagem de pagina    -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+      </div>
+    </section>
+    
+  </main>
+  <!-- modal  -->
+  <div class="modal fade" id="modal_padrao" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" id="modal_dialog">
+      <div class="modal-content">
+       
+        <div class="modal-body" id="modal-body">
+          <div class="background_image">
+            <img alt="" src="./assets/img/bandas/instrumental/EduardoLira/Album2.webp">  
+          </div>
+           <div class="botao_play">
+            <a href="./videoplayer.html"><i class="fa-solid fa-circle-play"></i></a>
+            
+          </div>
+          <div class="modal_corpo">
+             <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Eduardo Lira</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+         
+          <p id="Primeiro-paragrafo"><span>Guitardate in Concert</span>  tem a proposta de trazer um pocket show instrumental focando guitarristas. Hoje trazemos o fantástico Eduardo lira apresentando seu primeiro Album, o Aftermath.</p>
+          <!-- Redes Sociais e Contato -->
+          <div class="redes_sociais">
+            <a href="https://pt-br.facebook.com/carloselsb" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/eduardoliragt/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/EduardoLiraGT?app=desktop" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/17Buq4dDEZ1AwJ0m0YMtF0" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+          </div>
+          <!--           Botão Saiba Mais -->
+          <button onclick="window.location.href='./saibamais.html'" type="button" class="btn btn-outline-secondary btn-lg botao_padrao">Saiba Mais</button>
+           <!--             Botão Fechar -->
+          <button type="button" class="btn btn-outline-secondary btn-lg botao_padrao" data-bs-dismiss="modal">Sair</button>
+          <!--  Biblioteca -->
+          <div class="biblioteca">
+            <div class="imagem_biblioteca">
+              <img alt="" src="./assets/img/bandas/instrumental/EduardoLira/Album1.webp">
+            </div>
+            <div class="descricao_biblioteca"> 
+              <h3>The First Concept</h3>
+              <p> Primeiro álbum do guitarrista Brasileiro, lançado em 2016. Eduardo conta com a participação de músicos renomados do Rock / Heavy Metal nacional. Em “Sunrise”, tem a participação do baixista Andria Busic (Dr.Sin), na faixa “Catharsis”, é a vez de Felipe Andreoli (Angra) assumir as quatro cordas e em “Raining Day”, o tecladista Rodrigo Boechat (SoulSpell) marca presença.</p>
+            </div>
+            <div class="imagem_biblioteca">
+              <img alt="" src="./assets/img/bandas/instrumental/EduardoLira/Album2.webp">
+            </div>
+            <div class="descricao_biblioteca"> 
+              <h3>Aftermath</h3>
+              <p>Segundo CD solo instrumental do guitarrista Eduardo Lira. Aftermath, faixa título conta ainda com a presença especial do músico Fabio Carito (Warrel Dane, Confessori, Instincted.</p>
+            </div>
+            <div class="imagem_biblioteca">
+              <img alt="" src="./assets/img/bandas/instrumental/EduardoLira/Album3.webp">
+            </div>
+            <div class="descricao_biblioteca"> 
+              <h3>Evanescent</h3>
+              <p>O álbum é o terceiro trabalho de estúdio de Eduardo Lira, e possui dez faixas, sendo a primeira delas um tributo a Johann Sebastian Bach, compositor alemão da peça “Come, Sweet Death“, que abre o disco.</p>
+            </div>
+            <div class="imagem_biblioteca">
+              <img alt="" src="./assets/img/bandas/instrumental/EduardoLira/Album4.webp">
+            </div>
+            <div class="descricao_biblioteca"> 
+              <h3>Eight Billion Souls</h3>
+              <p> Quarto CD solo instrumental do guitarrista Eduardo Lira. 8BSouls, lançamento em Agosto de 2020. Edição especial com participação de seu Pai Osvaldo Barbosa e Filho Eduardo "Lira" Barbosa. .</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Javascript  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.saibamais_logo img {
+
+  margin-top: 100px;
+  
+}
+
+.saibamais_logo,
+.saibamais_foto {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  
+}
+
+.saibamais_descricao {
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+.saibamais_descricao span {
+  padding-left: 30px;
+}
+
+.saibamais_botao {
+  display: flex;
+  justify-content: center;
+}

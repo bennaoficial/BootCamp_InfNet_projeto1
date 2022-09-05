@@ -1,0 +1,29 @@
+h1 {
+  color: white;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+.carousel-control-prev {
+  width: 100px !important;
+}
+
+.carousel-control-next {
+  width: 100px !important;
+  
+}
+
+.bandas_img {
+  padding-top: 30px;
+}
+
+.bandas_img img {
+  width: 400px;
+}
+
+.container_placeholder .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

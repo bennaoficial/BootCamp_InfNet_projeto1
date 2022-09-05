@@ -1,0 +1,233 @@
+<!-- Formulário para Inscrição da Banda  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <title>Projeto Final</title>
+</head>
+
+<body>
+  <!-- parte top do menu    -->
+    <header class="py-3 mb-3 border-bottom menu">
+      <div class="container-fluid align-items-center menu_topo">
+        <div class="dropdown">
+          <a href="#"
+            class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 text-white text-decoration-none dropdown-toggle "
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img alt="" id="logo_menu" src="./assets/img/Logo/logo.webp" width="150">
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <ul class="dropdown-menu text-small shadow menu_dropdown" style="">
+            <li>
+              <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                  </svg>
+                  <div class="">
+                    <img src="./assets/img/usuario.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    <span class="fs-4"><strong>Benaion</strong></span>
+                  </div>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                    <a href="./home.html" class="nav-link text-white" aria-current="page">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Início
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./home.html#rock" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Rock
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./home.html#metal" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Metal
+                    </a>
+                  </li>
+                    <li class="nav-item">
+                    <a href="./home.html#instrumental" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Instrumental
+                    </a>
+                  </li>
+                </ul>
+                 <ul>
+                   
+                    <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Faq
+                    </a>
+                  </li>
+                   
+                    <li class="nav-item">
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#"></use>
+                      </svg>
+                      Suporte
+                    </a>
+                  </li>
+                 </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+<!--           <form class="w-10 me-3" role="buscar">
+            <input type="search" class="form-control" placeholder="Buscar..." aria-label="Buscar">
+          </form> -->
+
+          <div class="flex-shrink-0 dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./assets/img/usuario.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./formulario.html">Sua Banda</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./index.html">Encerrar Sessão</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+<main>
+<form class="row g-3 formulario_inscricao">
+  <h1>Inscreva sua Banda</h1>
+  <div class="col-md-6">
+    <label for="inputnommebanda" class="form-label">Nome da Banda</label>
+    <input type="text" class="form-control" id="inputnommebanda">    
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Endereço</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="rua dos limoeiros...">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Cidade</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Estilo da banda</label>
+    <select id="inputState" class="form-select">
+      <option selected>escolha...</option>
+      <option>Rock</option>
+      <option>Metal</option>
+      <option>Instrumental</option>
+      <option>Indie</option>
+      <option>Pop</option>
+      <option>Mpb</option>
+      <option>Rap</option>
+      <option>Trap</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputTel" class="form-label">Telefone</label>
+    <input type="tel" class="form-control" id="inputTel">
+  </div>
+    <div class="col-12">
+    <label for="inputBiografia" class="form-label">Biografia</label>
+    <textarea class="form-control"  id="inputBiografia" rows="4" placeholder="Fale um pouco sobre a sua banda"></textarea>
+    </div>
+ <div class="col-md-6">
+    <label for="inputlink1" class="form-label">Video</label>
+    <input type="text" class="form-control" id="inputlink1" placeholder="link de video">
+ </div>
+ <div class="col-md-6">
+    <label for="inputlink2" class="form-label">Video</label>
+    <input type="text" class="form-control" id="inputlink2" placeholder="link de video">  
+ </div>
+ <div class="col-md-6">
+    <label for="inputlink3" class="form-label">Video</label>
+    <input type="text" class="form-control" id="inputlink3" placeholder="link de video">  
+ </div>
+<div class="col-md-6">
+    <label for="inputlink4" class="form-label">Video</label>
+    <input type="text" class="form-control" id="inputlink4" placeholder="link de video">  
+ </div>
+  <h2>Redes Sociais</h2>
+ <div class="col-md-6">
+    <label for="inputyoutube" class="form-label"><i class="fa-brands fa-youtube"> </i> YouTube</label>
+    <input type="text" class="form-control" id="inputyoutube" placeholder="youtube.com/...">  
+ </div> 
+  <div class="col-md-6">
+    <label for="inputinstagram" class="form-label"><i class="fa-brands fa-instagram"> </i> Instagram</label>
+    <input type="text" class="form-control" id="inputinstagram" placeholder="instagram.com/...">  
+ </div> 
+  <div class="col-md-6">
+    <label for="inputspotify" class="form-label"><i class="fa-brands fa-spotify"> </i> Spotify</label>
+    <input type="text" class="form-control" id="inputspotify" placeholder="spotify.com/...">  
+ </div> 
+  <div class="col-md-6">
+    <label for="inputfacebook" class="form-label"><i class="fa-brands fa-facebook"> </i> Facebook</label>
+    <input type="text" class="form-control" id="inputfacebook" placeholder="facebook.com/...">  
+ </div> 
+      
+<div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Concordo em me inscrever
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-outline-secondary botao_padrao">Sign in</button>
+  </div>
+
+  
+</form>
+
+       <button  onclick="window.location.href='./home.html'" type="button" class="btn btn-outline-secondary btn-lg botao_padrao">Voltar</button>
+  
+</main>
+
+
+
+
+
+
+<!--Javascript  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

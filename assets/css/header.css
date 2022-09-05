@@ -1,0 +1,22 @@
+.menu {
+    width: 100%;
+    position: fixed;
+   z-index: 999;
+}
+
+
+.menu_topo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_dropdown {
+  background-color: #3a3a3a !important;
+}
+
+.nav-item:hover,
+.nav-item:active {
+  background-color: black !important;
+  border-radius: 10px;
+}

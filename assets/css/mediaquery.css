@@ -1,0 +1,171 @@
+/*   sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px */
+
+
+@media screen and (max-width:1400px){  }
+@media screen and (max-width:1200px){
+.bandas_img img {
+    width: 300px !important;
+}
+}
+@media screen and (max-width:992px){
+  .login {
+      left: 20%;
+  }
+  .botao_login {
+    left: 35%; 
+  }
+/*   pagina home video do topo */
+  .banda_descricao{
+    display: none;
+  }
+  
+  .container_glass div img {
+    width: 150%;
+  }
+  .container_glass {
+    height: 400px;
+  }
+.previa_inicio .video1 {
+ display: none;
+
+}
+  .previa_inicio .video2 {
+ display: block;
+
+
+}
+/*   Carousel */
+.bandas_img img {
+    width: 200px !important;
+  }
+
+.container_placeholder h1 {
+  display: none;
+  
+}
+  
+  
+/* Modal */
+/*  Formulario */
+
+.formulario_inscricao {
+  padding-right:50px;
+  padding-left: 50px;
+  
+}
+
+  
+}
+@media screen and (max-width:768px){
+#modal-body {
+  width: 432px !important;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.modal-content{
+  width: 432px!important;
+}  
+.botao_play {
+  margin: 135px auto;
+  margin-bottom: 0;
+  z-index: 1;
+
+}
+.bandas_img img {
+    width: 300px !important;
+  }
+
+#modal_dialog{
+margin-left: calc(auto-20px) !important;
+  
+}
+.menu_topo .w-10 {
+  display:none;
+}
+
+  
+}
+
+@media screen and (max-width:576px){
+  .login {
+      left: 0%;
+  }
+  .botao_login {
+    left: 35%;
+  
+  }
+  /*   pagina home video do topo */
+  .banda_descricao{
+    display: none;
+  }
+  .container_glass div img {
+    width: 150%;
+  }
+  .container_glass {
+    height: 400px;
+  }
+.previa_inicio .video1 {
+ display: none;
+
+}
+  .previa_inicio .video2 {
+ display: block;
+
+}
+  .container_glass div img {
+    width: 150%;
+  }
+
+.container_placeholder {
+  display: none;
+}
+  
+#modal-body {
+  width: 300px !important;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 !important;
+  
+}
+.modal-content{
+  width: 300px!important;
+}  
+.botao_play {
+  margin: 92px auto;
+  margin-bottom: 0;
+  z-index: 1;
+
+}
+.background_image img {
+    width: 277px;
+
+}
+.biblioteca .imagem_biblioteca img {
+    width: 150px;
+}
+.formulario_inscricao {
+  padding-right:10px;
+  padding-left: 10px;
+  
+}
+
+.modal_corpo {
+    margin-top: 84px;
+
+  
+}
+
+}
+
+
+
+
+
+
+
+
